@@ -40,23 +40,6 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
-      </div>
-
-      <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>En</li>
-          <li><a href="#">De</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
@@ -92,11 +75,11 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'contact_us-url' %}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Get Started</a>
 
     </div>
   </header><!-- End Header -->
@@ -161,7 +144,7 @@
             <h4>Our Newsletter</h4>
             <p>Subscribe to our weekly newsletters to receive updates</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Subscribe" style="background-color: #cda45e">
             </form>
 
           </div>
