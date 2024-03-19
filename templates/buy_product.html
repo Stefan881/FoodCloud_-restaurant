@@ -1,0 +1,23 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="row d-flex col-4 m-auto">
+      <form method="post" action=" ">
+            {% csrf_token %}
+            <fieldset>
+                <legend class="border-bottom mb-4" style="color: black">Paying for {{ product.name }}</legend>
+                <label>Amount</label><br>
+                <input  name="price" class="form-control" value="{{ product.price }}" readonly type="text"><br>
+                <input class="form-control" name="phone" placeholder="Enter Phone Number (2547...)" type="text"><br>
+            </fieldset>
+            <div class="form-group">
+                <input style="background-color: #cda45e;border-radius: 10px;width: 100px" value="Pay" type="submit">
+            </div>
+        </form>
+    </div>
+
+
+
+{% endblock %}

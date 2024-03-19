@@ -1,0 +1,24 @@
+{% extends 'master.html' %}
+{% load  static %}
+{% block content %}
+
+
+    <div class = "col-md-6 offset-md-3">
+
+
+    <h1>Register</h1>
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <br><br><br>
+    <button type="submit" class="btn btn-secondary" style="background-color: #cda45e;text-align: center" >SignUp</button>
+    </form>
+
+    </div>
+
+
+
+
+
+
+{% endblock %}
